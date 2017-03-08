@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Enter Project Info</h1>
+    <form>
+      <div class="form-group">
+        <md-input-container style="width: 50%" >
+          <input mdInput placeholder="Project Name" type="text" id="name">
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 50%" >
+          <input mdInput placeholder="Project Sponsor" type="text" id="sponsor">
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 50%" >
+          <input mdInput placeholder="Project Role" type="text" id="role">
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="Project description" type="text" id="description">
+        </md-input-container>
+      </div>
+      <button md-raised-button [routerLink]="['/builder']" type="submit" class="btn btn-success">Add Project</button>
+    </form>
+</div>
