@@ -6,31 +6,33 @@ body {
 }
 
 #wrapper {
-    margin-top: 6em;
+    margin-top: 6vw;
 }
 
 h1 {
     text-align: center;
-    font-size: 6em;
+    font-size: 6vw;
     font-weight: 200;
     margin-top: 0;
 }
 
-button {
+.big-button {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    /*color: red;*/
     display: block;
-    
-    width: 30em;
-    height: 15em;
+    width: 25vw;
+    height: 8vw;
 }
 
 .mat-button-wrapper {
-    font-size: 3em;
+    font-size: 3vw;
 }
 
-img {
-    height: 15em;
+#bear {
+    height: 15vw;
+}
+
+.left {
+    text-align: left;
 }

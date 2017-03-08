@@ -1,3 +1,18 @@
-<p>
-  builder works!
-</p>
+
+
+<div id="wrapper">
+    <h1>Enter Job Posting URL</h1>
+    <md-input-container style="width: 80%" >
+        <input mdInput placeholder="URL" type="text" id="url">
+    </md-input-container>
+     <button md-raised-button (click)="onClick()" type="submit">Submit</button>
+</div>
+
+<div *ngIf="show">
+    <img src="http://i.imgur.com/QuFp40l.png" />
+    <br />
+    <br />
+    <button md-raised-button>Download</button>
+</div>
+
+<!--<md-progress-bar mode="determinate" value="55"></md-progress-bar>-->

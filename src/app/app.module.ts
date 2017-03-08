@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 
 import { routing, appRoutingProviders }  from './app.routes';
 import { MaterialModule } from '@angular/material';
+import 'hammerjs';
+
 import { LoginNewComponent } from './login-new/login-new.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BuilderComponent } from './builder/builder.component';
@@ -25,7 +27,7 @@ import { BuilderComponent } from './builder/builder.component';
     FormsModule,
     HttpModule,
     routing,
-    MaterialModule
+    MaterialModule.forRoot()
   ],
     providers: [appRoutingProviders],
     bootstrap: [AppComponent]
