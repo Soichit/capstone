@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    background-color: #BE822A;
+    font-family: 'Raleway', 'Helvetica Neue', 'Lato', sans-serif;
+    color: white;
+}
+
+#wrapper {
+    margin-top: 6em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6em;
+    font-weight: 200;
+    margin-top: 0;
+}
+
+button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /*color: red;*/
+    display: block;
+    
+    width: 30em;
+    height: 15em;
+}
+
+.mat-button-wrapper {
+    font-size: 3em;
+}
+
+img {
+    height: 15em;
+}
