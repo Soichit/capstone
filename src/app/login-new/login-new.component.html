@@ -3,7 +3,7 @@
     <form>
       <div class="form-group">
         <md-input-container style="width: 100%" >
-          <input mdInput placeholder="Name" type="text" id="name" required>
+          <input mdInput placeholder="Name" type="text" id="name" #name required>
         </md-input-container>
       </div>
       <div class="form-group">
@@ -16,7 +16,10 @@
           <input mdInput placeholder="Password" type="password" id="password" required>
         </md-input-container>
       </div>
-      <button class="big-button" md-raised-button [routerLink]="['/projects']" type="submit">Create Account</button>
+      <button class="big-button" md-raised-button [routerLink]="['/dashboard', name.value]" type="submit">Create Account</button>
     </form>
+     <!--Already have an account?
+     <br />
+    <button class="big-button" md-raised-button>Log In</button>-->
 </div>
 

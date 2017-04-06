@@ -9,3 +9,15 @@
 h1 {
     text-align: center;
 }*/
+
+
+md-card {
+    color: black;
+    background-color: white;
+    margin: 10vw;
+    text-align: left;
+}
+
+#next {
+    margin-left: 3vw;
+}

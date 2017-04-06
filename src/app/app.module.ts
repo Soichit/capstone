@@ -13,6 +13,7 @@ import 'hammerjs';
 import { LoginNewComponent } from './login-new/login-new.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BuilderComponent } from './builder/builder.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BuilderComponent } from './builder/builder.component';
     HomeComponent,
     LoginNewComponent,
     ProjectsComponent,
-    BuilderComponent
+    BuilderComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

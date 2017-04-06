@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginNewComponent } from './login-new/login-new.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BuilderComponent } from './builder/builder.component';
-
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 // const appRoutes: Routes = [
@@ -23,6 +23,7 @@ const appRoutes: Routes = [
   { path: 'login-new', component: LoginNewComponent},
   { path: 'projects', component: ProjectsComponent},
   { path: 'builder', component: BuilderComponent},
+  { path: 'dashboard/:name', component: DashboardComponent},
 
 ];
 

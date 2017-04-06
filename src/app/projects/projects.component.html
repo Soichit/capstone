@@ -18,9 +18,20 @@
       </div>
       <div class="form-group">
         <md-input-container style="width: 100%" >
-          <input mdInput placeholder="Project description" type="text" id="description">
+          <input mdInput placeholder="Project Description" type="text" id="description">
         </md-input-container>
       </div>
-      <button class="big-button" md-raised-button [routerLink]="['/builder']" type="submit">Add Project</button>
+      <button class="big-button" md-raised-button type="submit">Add Project</button>
+      <button id="next" class="big-button" md-raised-button [routerLink]="['/builder']">Next</button>
     </form>
+</div>
+
+<div id="projects">
+  <md-card *ngFor="let item of projects">
+    <h3>{{item.name}}</h3>
+    <p><strong>Project Sponsor:</strong> {{item.sponsor}}</p>
+    <p><strong>Project Role:</strong> {{item.role}}</p>
+    <p><strong>Description:</strong> {{item.description}}</p>
+  </md-card>
+
 </div>

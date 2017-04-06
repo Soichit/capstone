@@ -17,8 +17,11 @@ export class BuilderComponent implements OnInit {
     this.show = false;
   }
 
-  onClick() {
+  onShow() {
     this.show = true;
   }
 
+  onDownload() {
+
+  }
 }
