@@ -1,24 +1,24 @@
 <div class="container">
     <h1>Enter Project Info</h1>
-    <form class="left">
+    <form class="left" [formGroup]="myForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <md-input-container style="width: 50%" >
-          <input mdInput placeholder="Project Name" type="text" id="name">
+          <input mdInput placeholder="Project Name" type="text" id="name" formControlName="name">
         </md-input-container>
       </div>
       <div class="form-group">
         <md-input-container style="width: 50%" >
-          <input mdInput placeholder="Project Sponsor" type="text" id="sponsor">
+          <input mdInput placeholder="Project Sponsor" type="text" id="sponsor" formControlName="sponsor">
         </md-input-container>
       </div>
       <div class="form-group">
         <md-input-container style="width: 50%" >
-          <input mdInput placeholder="Project Role" type="text" id="role">
+          <input mdInput placeholder="Project Role" type="text" id="role" formControlName="role">
         </md-input-container>
       </div>
       <div class="form-group">
         <md-input-container style="width: 100%" >
-          <input mdInput placeholder="Project Description" type="text" id="description">
+          <input mdInput placeholder="Project Description" type="text" id="description" formControlName="description">
         </md-input-container>
       </div>
       <button class="big-button" md-raised-button type="submit">Add Project</button>
