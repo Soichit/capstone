@@ -43,6 +43,6 @@ import { ResumesComponent } from './resumes/resumes.component';
     BrowserAnimationsModule
   ],
     providers: [appRoutingProviders],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent] //HttpService
 })
 export class AppModule { }

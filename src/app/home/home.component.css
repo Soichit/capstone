@@ -48,3 +48,18 @@ a {
     margin: 2vw;
     float: left;
 }
+
+#elizabear, #elizabear2 {
+    position: fixed;
+    width: 15vw;
+}
+
+#elizabear {
+    bottom: -3vw;
+    left: 5vw;
+}
+
+#elizabear2 {
+    bottom: -3vw;
+    right: 5vw;
+}

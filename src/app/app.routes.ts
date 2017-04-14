@@ -1,9 +1,6 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-// import { HeaderComponent } from './header/header.component';
-// import { ProjectsComponent } from './projects/projects.component';
-// import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { LoginNewComponent } from './login-new/login-new.component';
 import { GeneralComponent } from './general/general.component';
