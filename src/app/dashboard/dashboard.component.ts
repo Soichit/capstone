@@ -9,8 +9,8 @@ import { Subscription } from "rxjs/Rx";
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  private subscription: Subscription;
-  private name: string;
+  //private subscription: Subscription;
+  name: string;
 
   constructor() { }
 

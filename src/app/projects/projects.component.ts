@@ -10,7 +10,7 @@ import { FormGroup, FormControl } from "@angular/forms";
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  private projects: Project[] = [];
+  projects: Project[] = [];
   myForm: FormGroup;
 
   constructor() {

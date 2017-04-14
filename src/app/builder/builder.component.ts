@@ -8,8 +8,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class BuilderComponent implements OnInit {
 
-  private progress: number;
-  private show: boolean
+  progress: number;
+  show: boolean
   constructor() { }
 
   ngOnInit() {

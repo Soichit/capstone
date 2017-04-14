@@ -8,7 +8,7 @@ import { Work } from "./work";
   styleUrls: ['./work.component.css']
 })
 export class WorkComponent implements OnInit {
-  private works: Work[] = [];
+  works: Work[] = [];
   myForm: FormGroup;
 
   constructor() {
