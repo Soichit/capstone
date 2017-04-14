@@ -16,6 +16,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EducationComponent } from './education/education.component';
 import { WorkComponent } from './work/work.component';
+import { GeneralComponent } from './general/general.component';
+import { ResumesComponent } from './resumes/resumes.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { WorkComponent } from './work/work.component';
     DashboardComponent,
     NavbarComponent,
     EducationComponent,
-    WorkComponent
+    WorkComponent,
+    GeneralComponent,
+    ResumesComponent
   ],
   imports: [
     BrowserModule,

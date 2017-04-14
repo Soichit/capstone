@@ -15,27 +15,26 @@ export class ProjectsComponent implements OnInit {
 
   constructor() {
     this.myForm = new FormGroup({
-      'name': new FormControl(),
-      'sponsor': new FormControl(),
+      'title': new FormControl(),
+      'date': new FormControl(),
       'role': new FormControl(),
+      'sponsor': new FormControl(),
+      'url': new FormControl(),
       'description': new FormControl()
     });
   }
 
-  ngOnInit() {
-    //this.projects = new Projects();
-    //this.projects.push(new Project("Example Project 1", "No sponsor", "Project Manager", "This was my first project..."))
-  }
+  ngOnInit() {}
 
   onSubmit() {
-    console.log(this.myForm);
-    console.log(this.myForm.value);
-    console.log(this.myForm.value.name);
-    var name = this.myForm.value.name;
-    var sponsor = this.myForm.value.sponsor;
+    //console.log(this.myForm);
+    var title = this.myForm.value.title;
+    var date = this.myForm.value.date;
     var role = this.myForm.value.role;
+    var sponsor = this.myForm.value.sponsor;
+    var projectUrl = this.myForm.value.url;
     var description = this.myForm.value.description;
-    this.projects.push(new Project(name, sponsor, role, description));
+    this.projects.push(new Project(title, date, role, sponsor, projectUrl, description));
     this.myForm.reset();
   }
 }

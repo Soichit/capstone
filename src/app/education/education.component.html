@@ -1,3 +1,36 @@
-<p>
-  education works!
-</p>
+<app-navbar></app-navbar>
+<div class="container">
+    <h1>{{ "Education" | uppercase }}</h1>
+    <form>
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="Education Level" type="text" id="ed-level" #name required>
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="School" type="text" id="ed-school" required>
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="GPA (optional)" type="text" id="ed-gpa">
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="Major" type="text" id="ed-major">
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="Class standing (optional)" type="text" id="ed-grade">
+        </md-input-container>
+      </div>
+      <button md-raised-button [routerLink]="['/work']" type="submit">Next</button>
+    </form>
+</div>
+
+<div>
+  <h4>Step 2/5</h4>
+</div>

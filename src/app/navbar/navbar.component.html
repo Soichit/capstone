@@ -1,11 +1,13 @@
 
 <div id="navbar">
-  <div id="navbar-bear">
+  <!--<div id="navbar-bear">
     <a [routerLink]="['/home']"><img id="bear" src="http://i.imgur.com/qxQuLYy.png"/></a>
-  </div>
+  </div>-->
+
+  <a [routerLink]="['/home']"><img id="bear" src="http://i.imgur.com/qxQuLYy.png"/></a>
   <div class="row">
-    <div class="col-sm-4"><a [routerLink]="['/dashboard']">PROFILE</a></div>
-    <div class="col-sm-4">RESUMES</div>
-    <div class="col-sm-4"><a [routerLink]="['/builder']">BUILD</a></div>
+    <div class="col-sm-4"><a [routerLink]="['/dashboard']">{{ "Profile" | uppercase }}</a></div>
+    <div class="col-sm-4"><a [routerLink]="['/resumes']">{{ "Resumes" | uppercase }}</a></div>
+    <div class="col-sm-4"><a [routerLink]="['/builder']">{{ "Build" | uppercase }}</a></div>
   </div>
 </div>

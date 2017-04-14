@@ -1,3 +1,47 @@
-<p>
-  work works!
-</p>
+<app-navbar></app-navbar>
+<div class="container">
+    <h1>{{ "Work Experience" | uppercase }}</h1>
+    <form class="left" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <md-input-container style="width: 50%" >
+          <input mdInput placeholder="Company" type="text" id="work-company" formControlName="company" required>
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 50%" >
+          <input mdInput placeholder="Job Title" type="text" id="work-title" formControlName="title" required>
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 50%" >
+          <input mdInput placeholder="Start date" type="text" id="work-start" formControlName="start" required>
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 50%" >
+          <input mdInput placeholder="End Date" type="text" id="work-end" formControlName="end" required>
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="Description" type="text" id="work-description" formControlName="description">
+        </md-input-container>
+      </div>
+
+      <button md-raised-button type="submit">Add Work Experience</button>
+      <button md-raised-button [routerLink]="['/projects']" type="submit">Next</button>
+      <h4>Step 3/5</h4>
+    </form>
+</div>
+
+
+
+<div id="output">
+  <md-card *ngFor="let item of works">
+    <h3><strong>Company:</strong> {{item.company}}</h3>
+    <p><strong>Title:</strong> {{item.title}}</p>
+    <p><strong>Start:</strong> {{item.start}}</p>
+    <p><strong>End:</strong> {{item.end}}</p>
+    <p><strong>Description:</strong> {{item.description}}</p>
+  </md-card>
+</div>

@@ -1,17 +1,33 @@
 
 header {
-    padding-bottom: 12vw;
     background-color: #837869;
     color: black;
 }
 
+#top-nav {
+    text-align: right;
+}
+
+#header-template {
+    padding-top: 24vw;
+    padding-bottom: 24vw;
+}
+
+#header-template button {
+    background-color: black;
+    color: #f2f2f1;
+    font-size: 4vw;
+    padding: 2vw;
+}
+
+#header-template h1 {
+    font-size: 5vw;
+}
+
+
 main {
     color: black;
     margin: 14vw;
-}
-
-#home-name {
-    padding-top: 12vw;
 }
 
 #home-description {
@@ -24,9 +40,11 @@ main {
 
 a {
     margin-right: 4vw;
+    padding-top: 2vw;
 }
 
-#links {
-    padding-top: 2vw;
-    text-align: right;
+#bear {
+    width: 6vw;
+    margin: 2vw;
+    float: left;
 }

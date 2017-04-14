@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <h1>{{ "General Information" | uppercase }}</h1>
+    <form>
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="First Name" type="text" id="gen-firstName" #name required>
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="Last Name" type="text" id="gen-lastName" required>
+        </md-input-container>
+      </div>
+
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="Address" type="text" id="gen-address" #name required>
+        </md-input-container>
+      </div>
+
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="City" type="text" id="gen-city" required>
+        </md-input-container>
+      </div>
+
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="State" type="text" id="gen-state" required>
+        </md-input-container>
+      </div>
+
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="Zip Code" type="text" id="gen-zip" required>
+        </md-input-container>
+      </div>
+
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="Phone Number" type="text" id="gen-phone" required>
+        </md-input-container>
+      </div>
+
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="Portfolio (Optional)" type="text" id="gen-portfolio">
+        </md-input-container>
+      </div>
+
+
+      <button md-raised-button [routerLink]="['/education']" type="submit">Next</button>
+    </form>
+</div>
+
+<div>
+  <h4>Step 1/5</h4>
+</div>

@@ -1,40 +1,30 @@
 
 <app-navbar></app-navbar>
 <div class="container">
-    <h1>SIGN UP</h1>
+    <h1>{{ "Sign Up" | uppercase }}</h1>
     <form>
       <div class="form-group">
         <md-input-container style="width: 100%" >
-          <input mdInput placeholder="First Name" type="text" id="firstName" #name required>
+          <input mdInput placeholder="Email" type="email" id="log-email" required>
         </md-input-container>
       </div>
       <div class="form-group">
         <md-input-container style="width: 100%" >
-          <input mdInput placeholder="Last Name" type="text" id="lastName" required>
+          <input mdInput placeholder="Password" type="password" id="log-password" required>
         </md-input-container>
       </div>
       <div class="form-group">
         <md-input-container style="width: 100%" >
-          <input mdInput placeholder="Email" type="email" id="email" required>
+          <input mdInput placeholder="Confirm Password" type="password" id="log-password2" required>
         </md-input-container>
       </div>
-      <div class="form-group">
-        <md-input-container style="width: 100%" >
-          <input mdInput placeholder="Password" type="password" id="password" required>
-        </md-input-container>
-      </div>
-      <div class="form-group">
-        <md-input-container style="width: 100%" >
-          <input mdInput placeholder="Confirm Password" type="password" id="password2" required>
-        </md-input-container>
-      </div>
-      <button md-raised-button [routerLink]="['/education']" type="submit">Next</button>
+      <button md-raised-button [routerLink]="['/general']" type="submit">Next</button>
     </form>
      <!--Already have an account?
      <br />
     <button class="big-button" md-raised-button>Log In</button>-->
 </div>
 
-<div>
+<!--<div>
   <h4>Step 1/5</h4>
-</div>
+</div>-->

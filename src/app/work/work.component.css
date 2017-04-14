@@ -1,0 +1,14 @@
+md-card {
+    color: black;
+    background-color: white;
+    margin: 5vw;
+    text-align: left;
+}
+
+#next {
+    margin-left: 3vw;
+}
+
+.left {
+    text-align: left;
+}

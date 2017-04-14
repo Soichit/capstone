@@ -1,7 +1,9 @@
 
+<app-navbar></app-navbar>
 
 <div id="wrapper">
-    <h1>Enter Job Posting URL</h1>
+    <h1>{{ "Let's build your resume" | uppercase }}</h1>
+    <h4>Enter URL of Desired Job Posting</h4>
     <md-input-container style="width: 80%" >
         <input mdInput placeholder="URL" type="text" id="url">
     </md-input-container>
@@ -14,6 +16,8 @@
     <br />
     <!--<button md-raised-button (click)="onDownload()">Download</button>-->
     <a href="/assets/test-resume.docx" download>Download Your Resume</a>
+    <br />
+    <a>Check out other resumes</a>
 </div>
 
 <!--<md-progress-bar mode="determinate" value="55"></md-progress-bar>-->

@@ -1,15 +1,3 @@
-/*body {
-    background-color: #BE822A;
-    font-family: 'Raleway', 'Helvetica Neue', 'Lato', sans-serif;
-    color: white;
-    font-size: 2em;
-    text-align: left;
-}
-
-h1 {
-    text-align: center;
-}*/
-
 
 md-card {
     color: black;
@@ -20,4 +8,8 @@ md-card {
 
 #next {
     margin-left: 3vw;
+}
+
+.left {
+    text-align: left;
 }

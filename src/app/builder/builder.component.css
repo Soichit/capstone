@@ -1,15 +1,14 @@
-/*body {
-    background-color: #BE822A;
-    font-family: 'Raleway', 'Helvetica Neue', 'Lato', sans-serif;
-    color: white;
-    font-size: 2em;
-    text-align: center;
-}
+
+
 
 h1 {
-    text-align: center;
+    margin-top: 6vw;
 }
 
-#wrapper {
-    margin-top: 6em;
-}*/
+h4 {
+    margin-top: 8vw;
+}
+
+a {
+    color: black;
+}

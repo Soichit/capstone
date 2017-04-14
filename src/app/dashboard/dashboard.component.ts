@@ -8,7 +8,7 @@ import { Subscription } from "rxjs/Rx";
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit, OnDestroy {
+export class DashboardComponent implements OnInit {
   private subscription: Subscription;
   private name: string;
 
@@ -24,8 +24,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   ngOnInit() {
   }
 
-  ngOnDestroy() {
-    this.subscription.unsubscribe();
-  }
+  // ngOnDestroy() {
+  //   this.subscription.unsubscribe();
+  // }
 
 }

@@ -1,37 +1,55 @@
+<app-navbar></app-navbar>
 <div class="container">
-    <h1>Enter Project Info</h1>
+    <h1>{{ "Projects / Accomplishments" | uppercase }}</h1>
     <form class="left" [formGroup]="myForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <md-input-container style="width: 50%" >
-          <input mdInput placeholder="Project Name" type="text" id="name" formControlName="name">
+          <input mdInput placeholder="Title" type="text" id="title" formControlName="title" required>
         </md-input-container>
       </div>
       <div class="form-group">
         <md-input-container style="width: 50%" >
-          <input mdInput placeholder="Project Sponsor" type="text" id="sponsor" formControlName="sponsor">
+          <input mdInput placeholder="Date" type="text" id="date" formControlName="date" required>
         </md-input-container>
       </div>
       <div class="form-group">
         <md-input-container style="width: 50%" >
-          <input mdInput placeholder="Project Role" type="text" id="role" formControlName="role">
+          <input mdInput placeholder="Role" type="text" id="role" formControlName="role" required>
         </md-input-container>
       </div>
+      <div class="form-group">
+        <md-input-container style="width: 50%" >
+          <input mdInput placeholder="Sponsor (optional)" type="text" id="sponsor" formControlName="sponsor">
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 50%" >
+          <input mdInput placeholder="Project URL (optional)" type="text" id="url" formControlName="url">
+        </md-input-container>
+      </div>
+
       <div class="form-group">
         <md-input-container style="width: 100%" >
-          <input mdInput placeholder="Project Description" type="text" id="description" formControlName="description">
+          <input mdInput placeholder="Description" type="text" id="description" formControlName="description">
         </md-input-container>
       </div>
-      <button class="big-button" md-raised-button type="submit">Add Project</button>
+
+
+
+      <button md-raised-button type="submit">Add Project</button>
       <button id="next" class="big-button" md-raised-button [routerLink]="['/builder']">Next</button>
+      <h4>Step 4/5</h4>
     </form>
 </div>
 
-<div id="projects">
+
+<div id="output">
   <md-card *ngFor="let item of projects">
-    <h3>{{item.name}}</h3>
-    <p><strong>Project Sponsor:</strong> {{item.sponsor}}</p>
-    <p><strong>Project Role:</strong> {{item.role}}</p>
+    <h3><strong>Title:</strong> {{item.title}}</h3>
+    <p><strong>Date:</strong> {{item.date}}</p>
+    <p><strong>Role:</strong> {{item.role}}</p>
+    <p><strong>Sponsor:</strong> {{item.sponsor}}</p>
+    <p><strong>Url:</strong> {{item.url}}</p>
     <p><strong>Description:</strong> {{item.description}}</p>
   </md-card>
-
 </div>

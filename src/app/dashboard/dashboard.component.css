@@ -7,5 +7,6 @@ h1 {
 
 #profile {
     border-radius: 50%;
+    border: 2px solid black;
     margin-bottom: 5vw;
 }
