@@ -2,39 +2,11 @@
 
 body {
     text-align: center;
-    background-color: #BE822A;
     font-family: 'Raleway', 'Helvetica Neue', 'Lato', sans-serif;
-    color: white;
+    background-color: #f2f2f1;
+    color: black;
 }
 
-#wrapper {
-    margin-top: 6vw;
-}
-
-h1 {
-    text-align: center;
-    font-size: 6vw;
-    font-weight: 200;
-    margin-top: 0;
-}
-
-.big-button {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 25vw;
-    height: 8vw;
-}
-
-.mat-button-wrapper {
-    font-size: 3vw;
-}
-
-#bear {
-    height: 15vw;
-}
-
-.left {
-    text-align: left;
+a {
+    color: black;
 }

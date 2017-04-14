@@ -1,9 +1,14 @@
 <div class="container">
-    <h1>Create an Account</h1>
+    <h1>SIGN UP</h1>
     <form>
       <div class="form-group">
         <md-input-container style="width: 100%" >
-          <input mdInput placeholder="Name" type="text" id="name" #name required>
+          <input mdInput placeholder="First Name" type="text" id="firstName" #name required>
+        </md-input-container>
+      </div>
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="Last Name" type="text" id="lastName" required>
         </md-input-container>
       </div>
       <div class="form-group">
@@ -16,7 +21,12 @@
           <input mdInput placeholder="Password" type="password" id="password" required>
         </md-input-container>
       </div>
-      <button class="big-button" md-raised-button [routerLink]="['/dashboard', name.value]" type="submit">Create Account</button>
+      <div class="form-group">
+        <md-input-container style="width: 100%" >
+          <input mdInput placeholder="Confirm Password" type="password" id="password2" required>
+        </md-input-container>
+      </div>
+      <button md-raised-button [routerLink]="['/dashboard', name.value]" type="submit">Next</button>
     </form>
      <!--Already have an account?
      <br />

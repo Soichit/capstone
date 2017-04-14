@@ -13,6 +13,7 @@ import { LoginNewComponent } from './login-new/login-new.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BuilderComponent } from './builder/builder.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LoginNewComponent,
     ProjectsComponent,
     BuilderComponent,
-    DashboardComponent
+    DashboardComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

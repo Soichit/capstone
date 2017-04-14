@@ -1,38 +1,32 @@
-/*body {
-    text-align: center;
-    background-color: #BE822A;
-    font-family: 'Raleway', 'Helvetica Neue', 'Lato', sans-serif;
-    color: white;
+
+header {
+    padding-bottom: 12vw;
+    background-color: #837869;
+    color: black;
 }
 
-#wrapper {
-    margin-top: 6vw;
+main {
+    color: black;
+    margin: 14vw;
 }
 
-h1 {
-    text-align: center;
-    font-size: 6vw;
-    font-weight: 200;
-    margin-top: 0;
+#home-name {
+    padding-top: 12vw;
 }
 
-.big-button {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 25vw;
-    height: 8vw;
+#home-description {
+    margin-bottom: 6vw;
 }
 
-.mat-button-wrapper {
-    font-size: 3vw;
+#home-features {
+    margin: 12vw;
 }
 
-#bear {
-    height: 15vw;
+a {
+    margin-right: 4vw;
 }
 
-.left {
-    text-align: left;
-}*/
+#links {
+    padding-top: 2vw;
+    text-align: right;
+}

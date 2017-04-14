@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Component({
   selector: 'app-login-new',
