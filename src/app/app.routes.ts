@@ -7,23 +7,23 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LoginNewComponent } from './login-new/login-new.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { EducationComponent } from './education/education.component';
+import { WorkComponent } from './work/work.component';
 import { BuilderComponent } from './builder/builder.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 
-// const appRoutes: Routes = [
-//   { path: '', redirectTo: 'projects', pathMatch: 'full' },
-//   { path: 'projects', component: ProjectsComponent },
-//   { path: 'about', component: AboutComponent }
-// ];
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'login-new', component: LoginNewComponent},
   { path: 'projects', component: ProjectsComponent},
+  { path: 'education', component: EducationComponent},
+  { path: 'work', component: WorkComponent},
   { path: 'builder', component: BuilderComponent},
-  { path: 'dashboard/:name', component: DashboardComponent},
+   { path: 'dashboard', component: DashboardComponent},
+  // { path: 'dashboard/:name', component: DashboardComponent},
 
 ];
 

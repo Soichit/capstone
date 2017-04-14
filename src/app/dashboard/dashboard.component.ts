@@ -10,13 +10,16 @@ import { Subscription } from "rxjs/Rx";
 })
 export class DashboardComponent implements OnInit, OnDestroy {
   private subscription: Subscription;
-  private name: string
+  private name: string;
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
-    this.subscription = activatedRoute.params.subscribe(
-      (param: any) => this.name = param['name']
-    );
-   }
+  constructor() { }
+
+  
+  // constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+  //   this.subscription = activatedRoute.params.subscribe(
+  //     (param: any) => this.name = param['name']
+  //   );
+  //  }
 
   ngOnInit() {
   }

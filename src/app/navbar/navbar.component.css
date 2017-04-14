@@ -1,0 +1,15 @@
+#navbar {
+    background-color: #837869;
+    color: white;
+    padding-bottom: 4vw;
+    font-weight: bold;
+}
+
+#bear {
+    width: 6vw;
+    margin: 1vw;
+}
+
+#navbar-bear {
+    text-align: left;
+}
