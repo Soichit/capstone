@@ -10,3 +10,11 @@ body {
 a {
     color: #f2f2f1;
 }
+
+button {
+    background-color: #837869;
+}
+
+.mat-button, .mat-icon-button, .mat-raised-button {
+    color: white !important;
+}

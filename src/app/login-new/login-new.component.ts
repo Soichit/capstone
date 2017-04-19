@@ -18,9 +18,9 @@ export class LoginNewComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(email: string, password: string) {
-    console.log("SUBMIT");
-    this.signinService.sendData({email: email, password: password})
-  }
+  // onSubmit(email: string, password: string) {
+  //   console.log("SUBMIT");
+  //   this.signinService.sendData({email: email, password: password})
+  // }
 
 }
