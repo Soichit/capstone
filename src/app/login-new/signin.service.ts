@@ -20,18 +20,19 @@ export class SigninService {
     //     .map((data: Response) => data.json());
     // }
 
-    sendData(user: any) {
-        const body = JSON.stringify(user);
-        const headers = new Headers();
-        headers.append('Content-Type', 'application/json');
+    // sendData(user: any) {
+    //     const body = JSON.stringify(user);
+    //     const headers = new Headers();
+    //     headers.append('Content-Type', 'application/json');
 
-        let params: URLSearchParams = new URLSearchParams();
-        params.set('a', "1");
-        params.set('b', "2");
-        params.set('c', "3");
+    //     let params: URLSearchParams = new URLSearchParams();
+    //     params.set('a', "1");
+    //     params.set('b', "2");
+    //     params.set('c', "3");
 
-        return this.http.post('http://buildaresume.cloudapp.net/WebService1.asmx/CalculateSum', body, {
-            search: params
-        }).subscribe(
-            (response) => console.log(response))}
-    };
+    //     return this.http.post('http://buildaresume.cloudapp.net/WebService1.asmx/CalculateSum', body, {
+    //         search: params
+    //     }).subscribe(
+    //         (response) => console.log(response))}
+    // };
+}
