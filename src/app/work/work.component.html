@@ -1,4 +1,10 @@
 <app-navbar></app-navbar>
+
+
+<div>
+  <h4 class="step">Step 3/5</h4>
+</div>
+
 <div class="container">
     <h1>{{ "Work Experience" | uppercase }}</h1>
     <form class="left" [formGroup]="myForm" (ngSubmit)="onSubmit()">
@@ -29,8 +35,9 @@
       </div>
 
       <button md-raised-button type="submit">Add Work Experience</button>
-      <button md-raised-button [routerLink]="['/projects']" type="submit">Next</button>
-      <h4>Step 3/5</h4>
+      <div class="nextDiv">
+        <button md-raised-button [routerLink]="['/projects']" type="submit">Next</button>
+      </div>
     </form>
 </div>
 

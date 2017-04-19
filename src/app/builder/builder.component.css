@@ -9,6 +9,12 @@ h4 {
     margin-top: 8vw;
 }
 
-a {
-    color: black;
+#bottom a {
+    color: blue;
+    margin: 2vw;
+    text-decoration: underline;
+}
+
+#wrapper {
+    margin-bottom: 4vw;
 }

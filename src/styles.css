@@ -18,3 +18,15 @@ button {
 .mat-button, .mat-icon-button, .mat-raised-button {
     color: white !important;
 }
+
+.step {
+    margin-top: 3vw;
+}
+
+.container {
+    margin-top: 2vw;
+}
+
+.nextDiv {
+    text-align: center;
+}

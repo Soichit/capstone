@@ -1,21 +1,32 @@
 
 <app-navbar></app-navbar>
 
+<div>
+  <h4 class="step">Step 5/5</h4>
+</div>
+
 <div id="wrapper">
     <h1>{{ "Let's build your resume" | uppercase }}</h1>
-    <h4>Enter URL of Desired Job Posting</h4>
+    <h4>Copy and paste job posting here</h4>
+    <textarea rows="12" cols="100"></textarea>
+    <br />
+    <button md-raised-button (click)="onShow()" type="submit">Submit</button>
+
+
+    <!--<h4>Enter URL of Desired Job Posting</h4>
     <md-input-container style="width: 80%" >
         <input mdInput placeholder="URL" type="text" id="url">
     </md-input-container>
-     <button md-raised-button (click)="onShow()" type="submit">Submit</button>
+     <button md-raised-button (click)="onShow()" type="submit">Submit</button>-->
 </div>
 
-<div *ngIf="show">
+<div id="bottom" *ngIf="show">
     <img src="http://i.imgur.com/QuFp40l.png" />
     <br />
     <br />
     <!--<button md-raised-button (click)="onDownload()">Download</button>-->
-    <a href="/assets/test-resume.docx" download>Download Your Resume</a>
+    <a class="download" href="/assets/test-resume.docx" download>Download Doc File</a>
+    <a class="download">Download PDF file</a>
     <br />
     <a [routerLink]="['/resumes']">Check out other resumes</a>
 </div>

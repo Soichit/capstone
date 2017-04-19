@@ -8,3 +8,18 @@ img {
 a {
     color: black;
 }
+
+.col-md-4 > a {
+    color: blue;
+    margin: 2vw;
+    text-decoration: underline;
+}
+
+button {
+    margin-top: 1vw;
+    width: 16vw;
+}
+
+.greenButton {
+    background-color: green;
+}
