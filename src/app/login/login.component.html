@@ -1,7 +1,6 @@
-
 <app-navbar></app-navbar>
 <div class="container">
-    <h1>{{ "Sign Up" | uppercase }}</h1>
+    <h1>{{ "Login" | uppercase }}</h1>
     <form (ngSubmit)="onSubmit()">
       <div class="form-group">
         <md-input-container style="width: 100%" >
@@ -13,18 +12,12 @@
           <input mdInput placeholder="Password" type="password" id="log-password" required>
         </md-input-container>
       </div>
-      <div class="form-group">
-        <md-input-container style="width: 100%" >
-          <input mdInput placeholder="Confirm Password" type="password" id="log-password2" required>
-        </md-input-container>
-      </div>
       <!--<button md-raised-button type="submit" >Submit</button>-->
-
     </form>
-    <button md-raised-button [routerLink]="['/general']">Create Account</button>
+    <button md-raised-button [routerLink]="['/general']">Log In</button>
 
     <br />
-     Already have an account?
+     Don't' have an account?
      <br />
-    <button md-raised-button [routerLink]="['/login']">Log In</button>
+    <button md-raised-button [routerLink]="['/login-new']">Create Account</button>
 </div>

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { LoginNewComponent } from './login-new/login-new.component';
+import { LoginComponent } from './login/login.component';
 import { GeneralComponent } from './general/general.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { EducationComponent } from './education/education.component';
@@ -17,6 +18,7 @@ const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'login-new', component: LoginNewComponent},
+  { path: 'login', component: LoginComponent},
   { path: 'general', component: GeneralComponent},
   { path: 'projects', component: ProjectsComponent},
   { path: 'education', component: EducationComponent},

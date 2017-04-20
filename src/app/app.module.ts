@@ -18,6 +18,7 @@ import { EducationComponent } from './education/education.component';
 import { WorkComponent } from './work/work.component';
 import { GeneralComponent } from './general/general.component';
 import { ResumesComponent } from './resumes/resumes.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ResumesComponent } from './resumes/resumes.component';
     EducationComponent,
     WorkComponent,
     GeneralComponent,
-    ResumesComponent
+    ResumesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
